@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Timely" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timely</title>
+</head>
+<body>
+    <h1>Timely</h1>
+    <!--the start and stop button after the first button disappears-->
+    <button id="Start_Stop_Button" onclick="clickOnStart_Stop_Button();">Start</button>
+    
+    <!--div class to center the table-->
+    <div class="CenterTable">
+        <table id="Table">
+            <thead>
+                <tr>
+                    <th>Project</th> 
+                    <th>Start</th>
+                    <th>Stop</th>
+                    <th>Duration</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                <tr>
+            </thead> 
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+    <!--Popup for the stop button-->
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close_button" onclick="closePopup();">&times</div>
+            <h1>Stop Timer</h1>
+            <label for="project_name">Project name:</label>
+            <input type="text" id="project_name" name="project_name">
+            <input type="button" id="stop_timer" onclick="stopTimer();" value="Stop timer">
+        </div>
+    </div>
+    
+    <!--the first button that appears on the page-->
+    <div class="firstButtonCenter">
+        <button id="StartButton" onclick="clickOnFirstStartButton();">Start</button>
+    </div>
+
+    <!--Popup for the edit button-->
+    <div class="popup2" id="popup-2">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close_button" onclick="closeEdit();">&times</div>
+            <h1>Edit Project</h1>
+            <label for="project_rename">Rename: </label>
+            <input type="text" id="project_rename" name="project_rename">
+            <input type="button" id="Save" value="Save">
+        </div>
+    </div>
+
+    <script src="timely.js"></script>
+</body>
+</html>

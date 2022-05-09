@@ -1,0 +1,282 @@
+h1 {
+    font-family: arial, sans-serif;
+    font-size: 160%;
+}
+
+#Start_Stop_Button {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: none;
+}
+
+#Start_Stop_Button:hover {
+    background-color: #009879;
+    color: white;
+}
+
+.firstButtonCenter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#StartButton {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+}
+
+#StartButton:hover {
+    background-color: #009879;
+    color: white;
+}
+
+.CenterTable {
+    width: 680px;
+    margin: auto;
+}
+
+#Table {
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    border-collapse: collapse;
+    width: 50%;
+    min-width: 400px;
+    margin: 25px 0;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 20px;
+    empty-cells: show;
+    display: none;
+}
+
+td, th {
+    border: black;
+    text-align: center;
+    padding: 12px 15px;
+}
+
+th {
+    background-color: #009879;
+    color: ffffff;
+    font-weight: bold;
+    width: 100px;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+/*Popup style for the stop timer*/
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close_button{
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #009879;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: auto;
+}
+
+.popup.active .overlay{
+    display: block;
+}
+
+.popup.active .content{
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 4px;
+}
+
+.popup h1{
+    color: #009879;
+}
+
+label {
+    margin: 0px auto;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    float:left;
+}
+
+#project_name{
+    width: 290px;
+    height: 15px;
+    border-color: #009879;
+}
+
+/*stop timer button style inside the popup*/
+#stop_timer{
+    margin: 15px auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+}
+
+#stop_timer:hover {
+    background-color: #009879;
+    color: white;
+}
+
+/*edit button inside the table style*/
+#EditButton {
+    margin: 0 auto;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+}
+
+#EditButton:hover {
+    background-color: #009879;
+    color: white;
+}
+
+/*remove button inside the table style*/
+#RemoveButton {
+    margin: 0 auto;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+}
+
+#RemoveButton:hover {
+    background-color: #009879;
+    color: white;
+}
+
+/*Popup style for the edit button*/
+.popup2 .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup2 .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup2 .close_button{
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #009879;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: auto;
+}
+
+.popup2.active .overlay{
+    display: block;
+}
+
+.popup2.active .content{
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 4px;
+}
+
+.popup2 h1{
+    color: #009879;
+}
+
+#project_rename{
+    width: 290px;
+    height: 15px;
+    border-color: #009879;
+}
+
+#Save{
+    margin: 15px auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+}
+
+#Save:hover {
+    background-color: #009879;
+    color: white;
+}
